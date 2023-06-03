@@ -1,0 +1,265 @@
+// New Casino!
+
+outro object 0
+	newscreen _GAME_OUTRO
+endobject
+
+intro object 0
+	newscreen _GAME_INTRO
+endobject
+
+signin object 0
+	newscreen _GAME_CHARSELECT
+	docharselect 0
+endobject
+
+
+// these are events
+lobby object 0  
+	usedeck 3 // added to keep things from crashing.. i gotta fix this!
+	newscreen _GAME_LOBBY
+	loaddeck _DECK_NORMAL
+	hotspot, 81, 81, 142, 196, blackjack, BlackJack
+	hotspot, 159, 87, 219, 202, casinowar, CasinoWar
+	hotspot, 241, 87, 302, 202, sevencardstud,7CardStud
+	hotspot, 329, 87, 390, 202, omahaholdem, OmahaHoldem
+	hotspot, 411, 84, 472, 199, letitride, LetItRide
+	hotspot, 488, 77, 549, 192, reddog,RedDog
+	hotspot, 150, 239, 210, 344, paigow, PaiGow
+	hotspot, 222, 239, 283, 344, caribbean, WildArubaStud
+	hotspot, 366, 239, 427, 344, spanish21, RoyalMatch21
+	hotspot, 291,238,352,343, texasholdem, TexasHoldem
+	hotspot, 435, 240, 496, 345, sicbo, SicBo
+endobject
+
+paigow object 0
+	newscreen _GAME_PAIGOW
+	hotspot 109,212,227,265,   paigow_table, Table1, 5, 1000
+	hotspot 43,273,184,362, paigow_table, Table2, 10, 2000
+	hotspot 219,320,432,421,  paigow_table, Table3, 25, 3000
+	hotspot 470,277,621,366,     paigow_table, Table4, 50, 5000
+	hotspot 409,211,515,270, paigow_table, Table5, 100, -2
+endobject
+
+texasholdem object 0  
+	newscreen _GAME_TEXASHOLDEM
+	hotspot 58,225,179,278,  texasholdem_table, Table1, 5, 10
+	hotspot 119,285,338,396,   texasholdem_table, Table2, 25, 50
+	hotspot 241,216,365,271, texasholdem_table, Table3, 250, 500
+	hotspot 374,274,624,385,   texasholdem_table, Table4, 1000, 2000
+	hotspot 424,218,558,267, texasholdem_table, Table5, 2000, 5000
+endobject
+
+omahaholdem object 0  
+	newscreen _GAME_OMAHAHOLDEM
+	hotspot 0,256,141,329,   omahaholdem_table, Table1, 5, 10
+	hotspot 0,339,195,444, omahaholdem_table, Table2, 25, 50
+	hotspot 223,262,453,319,   omahaholdem_table, Table3, 250, 500
+	hotspot 519,268,638,339, omahaholdem_table, Table4, 1000, 2000
+	hotspot 444,346,637,451, omahaholdem_table, Table5, 2000, 5000
+endobject
+
+sevencardstud object 0  
+	newscreen _GAME_SEVENCARDSTUD
+	hotspot 0,250,150,287, sevencardstud_table, Table1, 5, 10
+	hotspot 0,295,170,361,  sevencardstud_table, Table2, 25, 50
+	hotspot 184,351,459,435, sevencardstud_table, Table3, 250, 500
+	hotspot 462,295,638,355, sevencardstud_table, Table4, 1000, 2000
+	hotspot 493,250,637,289, sevencardstud_table, Table5, 2000, 5000
+endobject
+
+letitride object 0  
+	newscreen _GAME_LETITRIDE
+	hotspot 32,199,158,255, letitride_table, Table1, 5, 1000
+	hotspot 114,261,278,354, letitride_table, Table2, 10, 2000
+	hotspot 279,213,392,263, letitride_table, Table3, 25, 3000
+	hotspot 417,190,526,236, letitride_table, Table4, 50, 5000
+	hotspot 479,244,634,314, letitride_table, Table5, 100, -2
+endobject
+
+caribbean object 0  
+	newscreen _GAME_CARIBBEAN
+	hotspot 114,240,209,295,    caribbean_table, Table1, 5, 10
+	hotspot 124,312,311,393, caribbean_table, Table2, 25, 50
+	hotspot 314,246,433,307, caribbean_table, Table3, 250, 500
+	hotspot 475,288,617,364,   caribbean_table, Table4, 1000, 2000
+	hotspot 468,227,572,276, caribbean_table, Table5, 2000, 5000
+endobject
+
+casinowar object 0  
+	newscreen _GAME_CASINOWAR
+	hotspot 0,259,106,352, casinowar_table, Table1, 5, 1000
+	hotspot 80,187,200,253, casinowar_table, Table2, 10, 2000
+	hotspot 320,179,449,241, casinowar_table, Table3, 25, 3000
+	hotspot 537,209,637,289, casinowar_table, Table4, 50, 5000
+	hotspot 493,296,637,414, casinowar_table, Table5, 100, -2
+endobject
+
+sicbo object 0  
+	newscreen _GAME_SICBO
+	hotspot 0,225,127,298, sicbo_table, Table1, 5, 1000
+	hotspot 150,305,485,423, sicbo_table, Table2, 10, 2000
+	hotspot 475,225,639,298, sicbo_table, Table3, 25, 3000
+	hotspot 215,225,435,298, sicbo_table, Table4, 50, 5000
+	hotspot 262,180,413,220, sicbo_table, Table5, 100, -2
+endobject
+
+reddog object 0  
+	newscreen _GAME_REDDOG
+	hotspot 12,174,213,209, reddog_table, Table1, 5, 1000
+	hotspot 165,213,425,270, reddog_table, Table2, 10, 2000
+	hotspot 287,164,485,204, reddog_table, Table3, 25, 3000
+	hotspot 0,295,335,423, reddog_table, Table4, 50, 5000
+	hotspot 431,278,640,367, reddog_table, Table5, 100, -2
+endobject
+
+spanish21 object 0  
+	newscreen _GAME_SPANISH
+	hotspot 114,188,242,235, spanish21_table, Table1, 5, 1000
+	hotspot 4,239,124,317, spanish21_table, Table2, 10, 2000
+	hotspot 144,303,393,397, spanish21_table, Table3, 25, 3000
+	hotspot 428,257,600,345, spanish21_table, Table4, 50, 5000
+	hotspot 415,182,511,247, spanish21_table, Table5, 100, -2
+endobject
+
+blackjack object 0  
+	newscreen _GAME_BLACKJACK
+	hotspot 27,214-30,157,278-30, blackjack_table, Table1, 5, 1000
+	hotspot 21,296-30,193,410-30, blackjack_table, Table2, 10, 2000
+	hotspot 243,239-30,406,314-30, blackjack_table, Table3, 25, 3000
+	hotspot 433,301-30,611,393-30, blackjack_table, Table4, 50, 5000
+	hotspot 472,215-30,617,274-30, blackjack_table, Table5, 100, -2
+endobject
+
+slotmachine object 0  
+	newscreen _GAME_SLOTMACHINE
+	loadobject _OBJECT_SLOTWHEEL
+	hotspot 540,380,640,480, lobby, Test
+endobject
+
+//
+table object 0  
+	newscreen _GAME_TABLE
+//	hotspot 540,380,640,480, lobby, Test
+endobject
+
+placebet object 0
+	dobet 0	
+endobject
+
+placebet2 object 0
+	dobet2 0	
+endobject
+
+placebet3 object 0
+	dobet3 0	
+endobject
+
+sidebet object 0
+	dosidebet 0	
+endobject
+
+bumptest object 0
+	dobump 0	
+endobject
+
+card0 object 0
+	cardselect 0	
+endobject
+
+card1 object 0
+	cardselect 1	
+endobject
+
+card2 object 0
+	cardselect 2	
+endobject
+
+card3 object 0
+	cardselect 3	
+endobject
+
+card4 object 0
+	cardselect 4	
+endobject
+
+card5 object 0
+	cardselect 5	
+endobject
+
+card6 object 0
+	cardselect 6	
+endobject
+
+
+reddog_table object 0  
+	displaywait
+	newscreen _GAME_REDDOG_TABLE
+	loadgame _GM_REDDOG,0			// creates new Game Machine object
+//	hotspot 485,291,485+65,291+50, placebet, PlaceBet
+endobject
+
+blackjack_table object 0
+	displaywait
+	newscreen _GAME_BLACKJACK_TABLE // will override default
+	loadgame _GM_BLACKJACK,0 // creates new Game Machine object
+//	hotspot 485,261,485+65,261+50, placebet, PlaceBet
+//	hotspot 485,161,485+65,161+50, bumptest, Test
+endobject
+
+spanish21_table object 0
+	displaywait
+	newscreen _GAME_SPANISH_TABLE
+	loadgame _GM_SPANISH,1
+//	hotspot 485,291,485+65,291+50, placebet, PlaceBet
+endobject
+
+sicbo_table object 0
+	displaywait
+	newscreen _GAME_SICBO_TABLE
+	loadgame _GM_SICBO,0
+endobject
+
+caribbean_table object 0
+	displaywait
+	newscreen _GAME_CARIBBEAN_TABLE
+	loadgame _GM_CARIBBEAN,0
+endobject
+
+letitride_table object 0
+	displaywait
+	newscreen _GAME_LETITRIDE_TABLE
+	loadgame _GM_LETITRIDE,0
+endobject
+
+sevencardstud_table object 0
+	displaywait
+	newscreen _GAME_SEVENCARDSTUD_TABLE
+	loadgame _GM_SEVENCARDSTUD,0
+endobject
+
+omahaholdem_table object 0
+	displaywait
+	newscreen _GAME_OMAHAHOLDEM_TABLE
+	loadgame _GM_OMAHAHOLDEM,0
+endobject
+
+texasholdem_table object 0
+	displaywait
+	newscreen _GAME_TEXASHOLDEM_TABLE
+	loadgame _GM_TEXASHOLDEM,1
+endobject
+
+paigow_table object 0
+	displaywait
+	newscreen _GAME_PAIGOW_TABLE
+	loadgame _GM_PAIGOW,0
+endobject
+
+casinowar_table object 0
+	displaywait
+	newscreen _GAME_CASINOWAR_TABLE 
+	loadgame _GM_CASINOWAR,0			// creates new Game Machine object
+//	hotspot 485,291,485+65,291+50, placebet, PlaceBet
+endobject
+

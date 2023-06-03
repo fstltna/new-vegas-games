@@ -1,0 +1,131 @@
+#ifndef __NEWCASINO_DH__
+#define __NEWCASINO_DH__
+// New Casino config header file
+//
+//	UNDERSTANDS: enum, #define
+//			IGNORES: typedef
+
+//	Note to testers: Don't change this file!
+//	It is used in reading configs., but is also compiled
+//	into the game, so changing it will just skrew things up!
+
+enum	// config keyword token IDs
+{
+	_GAME_NONE,
+	_GAME_CHARSELECT,
+	_GAME_LOBBY,
+	_GAME_PAIGOW,            // RB:  Do not change the order from here...
+	_GAME_TEXASHOLDEM,
+	_GAME_OMAHAHOLDEM,
+	_GAME_SEVENCARDSTUD,
+	_GAME_LETITRIDE,
+	_GAME_CARIBBEAN,
+	_GAME_CASINOWAR,
+	_GAME_SICBO,
+	_GAME_REDDOG ,
+	_GAME_SPANISH,
+	_GAME_BLACKJACK,
+	_GAME_LOAN,              // ...to here.
+	_GAME_TESTSCREEN,
+	_GAME_INTRO,
+	_GAME_OUTRO,
+	//
+	_GAME_TABLE,
+	_GAME_PAIGOW_TABLE,         // Don't change order from here....
+	_GAME_TEXASHOLDEM_TABLE,
+	_GAME_OMAHAHOLDEM_TABLE,
+	_GAME_SEVENCARDSTUD_TABLE,
+	_GAME_LETITRIDE_TABLE,
+	_GAME_CARIBBEAN_TABLE,
+	_GAME_CASINOWAR_TABLE,
+	_GAME_SICBO_TABLE,
+	_GAME_REDDOG_TABLE,
+	_GAME_SPANISH_TABLE,
+	_GAME_BLACKJACK_TABLE,      // ...to here
+	_GAME_DISPLAYWAIT,
+	_GAME_END,
+}; // For gameType in HotSpots
+
+enum
+{
+	_LOBBY_EXIT,
+	_PAIGOW_EXIT,
+	_TEXASHOLDEM_EXIT,
+	_OMAHAHOLDEM_EXIT,
+	_SEVENCARDSTUD_EXIT,
+	_LETITRIDE_EXIT,
+	_CARIBBEAN_EXIT,
+	_CASINOWAR_EXIT,
+	_SICBO_EXIT,
+	_REDDOG_EXIT,
+	_SPANISH_EXIT,
+	_BLACKJACK_EXIT,
+	_TESTSCREEN_EXIT,
+	_TABLE_EXIT,
+	//
+	_GAME_START,
+	_PAIGOW_START,
+	_TEXASHOLDEM_START,
+	_OMAHAHOLDEM_START,
+	_SEVENCARDSTUD_START,
+	_LETITRIDE_START,
+	_CARIBBEAN_START,
+	_CASINOWAR_START,
+	_SICBO_START,
+	_REDDOG_START,
+	_spanish_start,
+	_BLACKJACK_START,
+	_TESTSCREEN_START,
+	_TABLE_START,
+	//
+	_TEXASHOLDEM_DEAL
+};
+
+enum
+{
+	_GM_CASINOWAR,
+	_GM_BLACKJACK,
+	_GM_SPANISH,
+	_GM_REDDOG,
+	_GM_SEVENCARDSTUD,
+
+	_GM_HOLDEM,
+	_GM_OMAHAHOLDEM,
+	_GM_TEXASHOLDEM,
+
+	_GM_CARIBBEAN,
+	_GM_LETITRIDE,
+	_GM_PAIGOW,
+	_GM_SICBO,
+	_GM_END
+};
+
+enum	// config keyword token IDs
+{
+	_OBJECT_BOX,
+	_OBJECT_SPRITE,
+	_OBJECT_SLOTWHEEL,
+	_OBJECT_CARDS,
+	_OBJECT_END
+};
+
+enum	
+{
+	_DECK_NONE,
+	_DECK_NORMAL,
+	_DECK_END
+};
+
+enum	
+{
+	// music
+	kSndTitle,			// "title"
+	kSndMusic,			// "music"
+
+	// soung fx
+	kSndClick,			// "click"
+
+	kSndMaxSounds
+};
+
+#endif
